@@ -82,12 +82,13 @@ function createData(name, calories, num) {
 }
 
 const rows = [
-    createData('올댓베이직 ', '기교', 3),
-    createData('올댓베이직', 452, 4),
-    createData('올댓베이직', 262, 5),
-    createData('올댓베이직', 222, 1),
-    createData('올댓베이직', 452, 2),
-    createData('올댓베이직', 262, 4),
+    createData('올댓베이직 ', '기교', '⭐⭐⭐⭐'),
+    createData('올댓베이직', 452, '⭐⭐⭐⭐'),
+    createData('올댓베이직', 262, '⭐⭐⭐⭐'),
+    createData('올댓베이직', 222, '⭐⭐⭐⭐'),
+    createData('올댓베이직', 452, '⭐⭐⭐⭐'),
+    createData('올댓베이직', 262, '⭐⭐⭐⭐'),
+
 
 ].sort((a, b) => (a.calories < b.calories ? -1 : 1));
 
@@ -128,7 +129,7 @@ export default function MTable() {
                             <TableCell component="th" scope="row" style={{ fontSize: '24px', fontWeight: 'bold', fontFamily: 'HanSans' }}>
                                 {row.name} <p style={{ fontSize: '14px', fontFamily: 'HanSans' }}>교양대학</p>
 
-                                <div style={{ width: 160, fontSize: '22px', fontWeight: 'bold', marginTop: '15px', fontFamily: 'HanSans' }}>
+                                <div style={{ width: 300, fontSize: '22px', fontWeight: 'bold', marginTop: '15px', fontFamily: 'HanSans' }}>
                                     평균지수 {row.num}
                                 </div>
                                 <div onClick={() => alert('dd')} style={{
